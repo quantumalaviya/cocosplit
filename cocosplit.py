@@ -27,8 +27,8 @@ def filter_annotations(annotations, images):
 def main(args):
     with open(args.annotations, 'rt', encoding='UTF-8') as annotations:
         coco = json.load(annotations)
-        info = coco['info']
-        licenses = coco['licenses']
+        info = ''
+        licenses = ''
         images = coco['images']
         annotations = coco['annotations']
         categories = coco['categories']
